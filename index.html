@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Exercise to display Resume</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--=================================
+            Header section
+            ================================= -->
+        <div id="mypage-header">
+            <nav class="mypage-header-nav">
+                <h1 id="header-name">Jeya Kirubakaran G</h1>
+            </nav>
+            
+        </div>
+
+        <!--=================================
+            center section
+            ================================= -->
+
+        <div id="mypage-center">
+            <div id= "mypage-leftnav">
+                <aside class="leftnav">
+                    <h3>Career Objective</h3>
+                </aside>
+                <aside class="leftnav">
+                    <h3>Education</h3>
+                </aside>
+                <aside class="leftnav">
+                    <h3>Work Experience</h3>
+                </aside>
+                <aside class="leftnav">
+                    <h3>Projects</h3>
+                </aside>
+            </div>
+
+        <!--=================================
+            main page content
+            ================================= -->
+
+            <div id="mypage-center-content">
+                <main >
+                    <section class="center-content">
+                        <h3 class="responsive-heading">Career Objective</h3>
+                        <p id="objective">
+                            To secure a challenging and responsible position where I can leverage 
+                            my skills and knowledge to contribute effectively to the organization's 
+                            success, while fostering my personal and professional growth.
+                        </p>
+                    </section>
+                    <section class="center-content">
+                        <h3 class="responsive-heading">Education</h3>
+                        <ul class="list">
+                            <li><span class="course">Master of Computer Applications - </span> <span class="year">(2023-2025)</span></li>
+                            <li><span class="course">B.Sc(Computer Science) - </span><span class="year">(2020-2023)</span></li>
+                            <li><span class="course">H.SC - </span> <span class="year">(2019-2020)</span></li>
+                            <li><span class="course">S.S.L.C - </span> <span class="year">(2017-2018)</span></li>
+                        </ul>
+                    </section>
+                    <section class="center-content">
+                        <h3 class="responsive-heading">Work Experience</h3>
+                        <ul class="list">
+                            <li>
+                               <span class="course">Back-end Developer Intern </span> <span class="year">at Cloudnix - (2025-present)</span>
+                            </li>
+                        </ul>
+                    </section>
+                    
+                    <section class="center-content">
+                        <h3 class="responsive-heading">Projects</h3>
+                        <ul class="projects">
+                            <li>
+                                <span class="title">File Uploader Website</span>
+                                <span class="tech">Technologies Used: </span>
+                                <span class="name">HTML, CSS, MySQL, PHP</span>
+                            </li>
+                            <li>
+                                <span class="title">Student Management System</span>
+                                <span class="tech">Technologies Used: </span>
+                                <span class="name">Java Swing, JDBC, MS Access</span>
+                            </li>
+                            <li>
+                                <span class="title">Mobile App: Parkinson Disease Diagnosis</span>
+                                <span class="tech">Technologies Used: </span>
+                                <span class="name">ML Models, Android Studio</span>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+
+        </div>
+
+        <!--=================================
+            footer section
+            ================================= -->
+
+        <div id="mypage-footer" class="mypage-footer">
+            <h3>Contact Info</h3>
+            <p class="label">Phone: <a id="footer-phone" href="tel:6369688413">6369688413</a></p>
+            <p class="label">E-mail: <a href="mailto:jeyakirubakaran03@gmail.com">jeyakirubakaran03@gmail.com</a> </p>
+        </div>
+        
+        <!-- JAVASCRIPT -->
+
+        <!--=================================
+            Find max number
+            ================================= -->
+
+        <div class="js-wrapper">
+            <div class="container">
+                <h3 class="js-heading">Find Max Number</h3>
+                <form id="max" class="form">
+                    <div class="form-group">    
+                        <label for="num1">Number 1: </label>
+                        <input type="number" id="num1" placeholder="Enter first number">
+                    </div>
+                    <div class="form-group">
+                        <label for="num2">Number 2: </label>
+                        <input type="number" id="num2" placeholder="Enter second number">
+                    </div>
+                    <button type="submit" class="submit-button">Find Max</button>
+                    <div id="error-max" class="error"></div>
+                    <div id="result-max" class="result"> </div>
+                </form>
+            </div>
+        </div>
+
+        <!--=================================
+            reverse the string
+            ================================= -->
+
+        <div class="js-wrapper">
+            <div class="container">
+                <h3 class="js-heading">String Reverse</h3>
+                <form id="reverse" class="form">
+                    <div class="form-group">
+                        <label for="str">Enter String: </label>
+                        <input type="text" id="str" placeholder="Enter the string">
+                    </div>
+                    <button type="submit" class="submit-button">Reverse</button>
+                    <div id="error-rev" class="error"></div>
+                    <div id="result-rev" class="result"></div>
+                </form>
+            </div>    
+        </div>
+
+        <!--=================================
+            Find Largest Word
+            ================================= -->
+
+        <div class="js-wrapper">
+            <div class="container">
+                <h3 class="js-heading">Find Largest Word</h3>
+                <form id="find-largest-word" class="form">
+                    <div class="form-group">
+                        <label for="word">Enter Words: </label>
+                        <input type="text" id="word" placeholder="Red, Green, Blue">
+                    </div>
+                    <button type="submit" class="submit-button">Check</button>
+                    <div id="error-longest-word" class="error"></div>
+                    <div id="result-longest-word" class="result"></div>
+                </form>
+            </div>
+        </div>
+
+        <!--=================================
+            Cookies
+            ================================= -->
+            
+        <div class="js-wrapper">
+            <div class="container">
+                <h3 class="js-heading">Cookies</h3>
+                <form id="cookies" class="form">
+                    <div class="form-group" >
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter the Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phonenum" placeholder="Enter Phone Number">
+                    </div>
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                    <div id="error-cookies" class="error"></div>
+                    <div id="result-cookies" class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+crossorigin="anonymous"></script>
+<script src="script1.js"></script>
+</html>
