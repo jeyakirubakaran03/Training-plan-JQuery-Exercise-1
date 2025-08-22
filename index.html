@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Exercise to display Resume</title>
+    <title>JQUERY Exercise</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="js.css">
 </head>
@@ -38,6 +38,11 @@
                 <aside class="leftnav">
                     <h3>Projects</h3>
                 </aside>
+                <div class="jquery-reference-hidden">
+                    <aside class="leftnav">
+                        <h3>References</h3>
+                    </aside>
+                </div>
             </div>
 
         <!--=================================
@@ -57,17 +62,17 @@
                     <section class="center-content">
                         <h3 class="responsive-heading">Education</h3>
                         <ul class="list">
-                            <li><span class="course">Master of Computer Applications - </span> <span class="year">(2023-2025)</span></li>
-                            <li><span class="course">B.Sc(Computer Science) - </span><span class="year">(2020-2023)</span></li>
-                            <li><span class="course">H.SC - </span> <span class="year">(2019-2020)</span></li>
-                            <li><span class="course">S.S.L.C - </span> <span class="year">(2017-2018)</span></li>
+                            <li><span class="section-heading">Master of Computer Applications - </span> <span class="section-content">(2023-2025)</span></li>
+                            <li><span class="section-heading">B.Sc(Computer Science) - </span><span class="section-content">(2020-2023)</span></li>
+                            <li><span class="section-heading">H.SC - </span> <span class="section-content">(2019-2020)</span></li>
+                            <li><span class="section-heading">S.S.L.C - </span> <span class="section-content">(2017-2018)</span></li>
                         </ul>
                     </section>
                     <section class="center-content">
                         <h3 class="responsive-heading">Work Experience</h3>
                         <ul class="list">
                             <li>
-                               <span class="course">Back-end Developer Intern </span> <span class="year">at Cloudnix - (2025-present)</span>
+                               <span class="section-heading">Back-end Developer Intern </span> <span class="section-content">at Cloudnix - (2025-present)</span>
                             </li>
                         </ul>
                     </section>
@@ -76,22 +81,42 @@
                         <h3 class="responsive-heading">Projects</h3>
                         <ul class="projects">
                             <li>
-                                <span class="title">File Uploader Website</span>
-                                <span class="tech">Technologies Used: </span>
-                                <span class="name">HTML, CSS, MySQL, PHP</span>
+                                <span class="project-title">File Uploader Website</span>
+                                <span class="project-tech">Technologies Used: </span>
+                                <span class="project-tech-name">HTML, CSS, MySQL, PHP</span>
                             </li>
                             <li>
-                                <span class="title">Student Management System</span>
-                                <span class="tech">Technologies Used: </span>
-                                <span class="name">Java Swing, JDBC, MS Access</span>
+                                <span class="project-title">Student Management System</span>
+                                <span class="project-tech">Technologies Used: </span>
+                                <span class="project-tech-name">Java Swing, JDBC, MS Access</span>
                             </li>
                             <li>
-                                <span class="title">Mobile App: Parkinson Disease Diagnosis</span>
-                                <span class="tech">Technologies Used: </span>
-                                <span class="name">ML Models, Android Studio</span>
+                                <span class="project-title">Mobile App: Parkinson Disease Diagnosis</span>
+                                <span class="project-tech">Technologies Used: </span>
+                                <span class="project-tech-name">ML Models, Android Studio</span>
                             </li>
                         </ul>
                     </section>
+                    <div class="jquery-reference-hidden">
+                        <section class="center-content">
+                            <h3 class="responsive-heading">Reference</h3>
+                            <ul class="list">
+                                <li>
+                                    <span class="section-heading">Name:</span> <span class="section-content">Shanmugavadivu</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading">Designation: </span> <span class="section-content">Manager</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading">Email ID: </span> <span class="section-content">psvadivu@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span class="section-heading">Phone: </span> <span class="section-content">9865431000</span>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
                 </main>
             </div>
 
@@ -103,8 +128,8 @@
 
         <div id="mypage-footer" class="mypage-footer">
             <h3>Contact Info</h3>
-            <p class="label">Phone: <a id="footer-phone" href="tel:6369688413">6369688413</a></p>
-            <p class="label">E-mail: <a href="mailto:jeyakirubakaran03@gmail.com">jeyakirubakaran03@gmail.com</a> </p>
+            <p class="label">Phone: <a id="footer-phone" class="mypage-footer-a" href="tel:6369688413">6369688413</a></p>
+            <p class="label">E-mail: <a class="mypage-footer-a" href="mailto:jeyakirubakaran03@gmail.com">jeyakirubakaran03@gmail.com</a> </p>
         </div>
         
         <!-- JAVASCRIPT -->
@@ -114,16 +139,16 @@
             ================================= -->
 
         <div class="js-wrapper">
-            <div class="container">
+            <div class="js-container">
                 <h3 class="js-heading">Find Max Number</h3>
                 <form id="max" class="form">
                     <div class="form-group">    
                         <label for="num1">Number 1: </label>
-                        <input type="number" id="num1" placeholder="Enter first number">
+                        <input type="number" id="num1" class="js-input-field-border" placeholder="Enter first number">
                     </div>
                     <div class="form-group">
                         <label for="num2">Number 2: </label>
-                        <input type="number" id="num2" placeholder="Enter second number">
+                        <input type="number" id="num2" class="js-input-field-border" placeholder="Enter second number">
                     </div>
                     <button type="submit" class="submit-button">Find Max</button>
                     <div id="error-max" class="error"></div>
@@ -137,12 +162,12 @@
             ================================= -->
 
         <div class="js-wrapper">
-            <div class="container">
+            <div class="js-container">
                 <h3 class="js-heading">String Reverse</h3>
                 <form id="reverse" class="form">
                     <div class="form-group">
                         <label for="str">Enter String: </label>
-                        <input type="text" id="str" placeholder="Enter the string">
+                        <input type="text" id="str" class="js-input-field-border" placeholder="Enter the string">
                     </div>
                     <button type="submit" class="submit-button">Reverse</button>
                     <div id="error-rev" class="error"></div>
@@ -156,12 +181,12 @@
             ================================= -->
 
         <div class="js-wrapper">
-            <div class="container">
+            <div class="js-container">
                 <h3 class="js-heading">Find Largest Word</h3>
                 <form id="find-largest-word" class="form">
                     <div class="form-group">
                         <label for="word">Enter Words: </label>
-                        <input type="text" id="word" placeholder="Red, Green, Blue">
+                        <input type="text" id="word" class="js-input-field-border" placeholder="Red, Green, Blue">
                     </div>
                     <button type="submit" class="submit-button">Check</button>
                     <div id="error-longest-word" class="error"></div>
@@ -175,16 +200,16 @@
             ================================= -->
             
         <div class="js-wrapper">
-            <div class="container">
+            <div class="js-container">
                 <h3 class="js-heading">Cookies</h3>
                 <form id="cookies" class="form">
                     <div class="form-group" >
                         <label for="name">Name:</label>
-                        <input type="text" id="name" placeholder="Enter the Name">
+                        <input type="text" id="name" class="js-input-field-border" placeholder="Enter the Name">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone:</label>
-                        <input type="text" id="phonenum" placeholder="Enter Phone Number">
+                        <input type="text" id="phonenum" class="js-input-field-border" placeholder="Enter Phone Number">
                     </div>
                     <button type="submit" id="submit" class="submit-button">Submit</button>
                     <div id="error-cookies" class="error"></div>

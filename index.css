@@ -85,6 +85,7 @@
     padding-left: 10px;
 }
 
+
 /* ===================================
    section: center content page style
    =================================== */
@@ -135,14 +136,14 @@
     gap: 5px;
 }
 
-.year{
+.section-content{
     color: #7FBCD2;
     font-style: italic;
     flex: 1;
     min-width: 150px;
 }
 
-.course{
+.section-heading{
     font-weight: bold;
     color:#1B3C53;
    
@@ -164,7 +165,7 @@
     margin-bottom: 5px;
 }
 
-.title{
+.project-title{
     display: block;
     font-weight: bold;
     font-size: 1.1rem;
@@ -172,19 +173,20 @@
     margin-bottom: 5px;
 }
 
-.tech{
+.project-tech{
     font-weight: bold;
     color: #34699A;
     flex-shrink: 0;
     margin-left: 0;
 
 }
-.name{
+.project-tech-name{
     font-style: italic;
     color: #7FBCD2;
     flex: 1;
     min-width: 150px;
 }
+
 
 /* =================================
    section: Footer style
@@ -208,7 +210,7 @@
     font-weight: bold;
     margin: 5px 0;
 }
-a{
+.mypage-footer-a{
     text-decoration: none;  
     color: #FFFDF6; 
     font-weight: lighter;
@@ -217,7 +219,7 @@ a{
 .responsive-heading{
     display: none;
 }
-.responsive-jquery{
+.jquery-reference-hidden{
     display: none;
 }
 
@@ -286,7 +288,7 @@ a{
     justify-content: center;
 }
 
-.container{
+.js-container{
     width: 100%;
 }
 
@@ -323,12 +325,14 @@ a{
 
 input{
     border-radius: 5px;
-    border: 1px solid black;
     padding: 10px 8px;
     outline: none;
     font-family: 'Poppins',sans-serif;
     width: 220px;
     
+}
+.js-input-field-border{
+    border: 10px solid black;
 }
 
 input::placeholder{
