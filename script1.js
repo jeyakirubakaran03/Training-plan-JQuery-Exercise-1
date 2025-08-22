@@ -8,7 +8,6 @@ $(document).ready(function(){
     
     $("input").removeClass("js-input-field-border");
 
-    
     $(".submit-button").hover(function(){
         $(this).toggleClass("button-color");
     })

@@ -326,13 +326,14 @@
 input{
     border-radius: 5px;
     padding: 10px 8px;
+    border: none;
     outline: none;
     font-family: 'Poppins',sans-serif;
     width: 220px;
     
 }
 .js-input-field-border{
-    border: 10px solid black;
+    border: 2px solid black;
 }
 
 input::placeholder{
