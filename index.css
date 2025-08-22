@@ -13,6 +13,7 @@
 }
 
 
+
 #wrapper{
     max-width: 1200px;
     margin: auto;
@@ -249,8 +250,8 @@
         height: auto;
     }
     #mypage-center-content section{
-        min-height: 280px;
-        max-height: 280px;
+        min-height: 250px;
+        max-height: 400px;
     }
 
     .responsive-heading{
@@ -399,3 +400,4 @@ input::placeholder{
     background-color: #FF1A00;
     color: #FFFF88;
 }
+
